@@ -12,10 +12,10 @@ function QuizHtml(props){
     
 
     const [styles, setStyles] = React.useState({
-        padding: '4px 15px',
+        // padding: '4px 15px',
         marginRight: '0.75em',
         background: 'transparent',
-        borderRadius: '8px',
+        // borderRadius: '8px',
         border: '1px solid #4D5B9E',
         cursor: 'pointer',
         color: '#293264'
@@ -25,9 +25,9 @@ function QuizHtml(props){
     const selected = {
             background: '#D6DBF5',
             border: 'transparent',
-            padding: '4px 15px',
+            // padding: '4px 15px',
             marginRight: '0.75em',
-            borderRadius: '8px',
+            // borderRadius: '8px',
             cursor: 'pointer',
             color: '#293264'
     }
@@ -35,9 +35,9 @@ function QuizHtml(props){
     const correctStyles = {
         background: '#94D7A2',
             border: 'transparent',
-            padding: '4px 15px',
+            // padding: '4px 15px',
             marginRight: '0.75em',
-            borderRadius: '8px',
+            // borderRadius: '8px',
             cursor: 'pointer',
             color: '#293264'
     }
@@ -45,9 +45,9 @@ function QuizHtml(props){
     const wrongStyles = {
             background: '#F8BCBC',
             border: 'transparent',
-            padding: '4px 15px',
+            // padding: '4px 15px',
             marginRight: '0.75em',
-            borderRadius: '8px',
+            // borderRadius: '8px',
             cursor: 'pointer',
             color: '#293264',
             opacity: 0.75

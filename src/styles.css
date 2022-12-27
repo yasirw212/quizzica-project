@@ -1,6 +1,9 @@
 * {
     margin: 0;
-    
+}
+
+body {
+    background: #F5F7FB;
 }
 
 /* typography */
@@ -80,6 +83,7 @@ h2 {
     margin-top: 1em;
     padding-bottom: 15px;
     border-bottom: 1px solid #DBDEF0;
+   
 }
 
 .answer {
@@ -89,6 +93,7 @@ h2 {
     border-radius: 8px;
     border: 1px solid #4D5B9E;
     cursor: pointer;
+    margin-top: 1em;
 }
 
 .score {
@@ -139,5 +144,126 @@ h2 {
 
     100% {
         transform: rotate(0deg);
+    }
+}
+
+@media (min-width: 900px) {
+    .answers {
+        display: grid;
+        grid-template: auto  / repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1000px) {
+    .quiz {
+        margin-top: 2em;
+        width: 80vw;
+    }
+}
+
+@media (min-width: 1310px) {
+    .question{
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .start-btn {
+        height: 60px;
+        width: 300px;
+        font-size: 1.5rem;
+        margin-top: 1em;
+    }
+
+    /* .answer{
+        padding: 8px 20px;
+        font-size: 1.15rem;
+        border-radius: 15px;
+    } */
+
+     .end-btn,
+    .replay-btn {
+        width: 200px;
+        height: 35px;
+        border-radius: 12px;
+        margin-top: 31px;
+        margin-bottom: 35px;
+        font-size: .75rem;
+    }
+}
+
+@media (min-width: 1700px) {
+    .title {
+        font-size: 6rem;
+    }
+
+    .subtitle {
+        font-size: 1.65rem;
+    }
+
+    .start-btn {
+        height: 100px;
+        width: 500px;
+        font-size: 2rem;
+    }
+
+    
+
+    .question{
+        font-size: 1.75rem;
+    }
+    
+    .question, .answer {
+        color: #293264;
+    }
+    .answers {
+        margin-top: 1em;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #DBDEF0;
+    }
+    
+    .answer {
+        padding: 3px 32px;
+        border-radius: 30px;
+        font-size: 1.10rem;
+    }
+    
+    .score {
+        font-size: 1.75rem;
+    }
+    
+    .end-btn,
+    .replay-btn {
+        width: 275px;
+        height: 52.5px;
+        border-radius: 18px;
+        font-size: 1.25rem;
+    }
+    
+    .loading-subtitle, .loading i {
+        font-size: 5rem;
+    }
+    
+    
+}
+
+@media (max-width: 550px) {
+    .reset-game {
+        margin-right: 10%;
+    }
+
+    .replay-btn{
+        margin-right: 0em;
+    }
+
+    .score {
+        font-size: .8rem;
+        width: 40%;
     }
 }

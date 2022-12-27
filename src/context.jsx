@@ -23,7 +23,7 @@ function MyContextProvider(props){
         setGetList(prevList => !prevList)
         setTimeout(function(){
             setLoading(prev => prev = false)
-        }, 1000)
+        }, 2000)
     }
 
     function setList(){
@@ -37,7 +37,7 @@ function MyContextProvider(props){
         setTimeout(function(){
             setGameOver(false)
             setLoading(false)
-        }, 1000)
+        }, 2000)
     }
 
     function endGame(){
