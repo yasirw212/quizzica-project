@@ -5,15 +5,13 @@ import {nanoid} from "nanoid"
 import react from "react";
 import {Footer} from "./footer";
 import {Loading} from "./loading"
-let renderQuestions 
+let renderQuestions
 let final = []
 
 function QuizPage(props){
     let question
     let results
     let answers = []
-
-   
     
     const {quiz, setList, getlist, loading} = React.useContext(MyContext)
     
@@ -101,7 +99,7 @@ function QuizPage(props){
             <div>
                 <Footer />
             </div>
-        </div>
+            </div>
     )
 }
 

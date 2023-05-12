@@ -6,10 +6,13 @@ let count = 0
 
 
 function QuizHtml(props){
-    const {quiz, questions, gameOver } = React.useContext(MyContext)
+    const {quiz, questions, gameOver /*count, addPoints*/} = React.useContext(MyContext)
+    // const [answers, setAnswers] = React.useState([])
+    let match
     
 
     const [styles, setStyles] = React.useState({
+
         marginRight: '0.75em',
         background: 'transparent',
         border: '1px solid #4D5B9E',
