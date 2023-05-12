@@ -23,7 +23,7 @@ function MyContextProvider(props){
         setGetList(prevList => !prevList)
         setTimeout(function(){
             setLoading(prev => prev = false)
-        }, 2000)
+        }, 3000)
     }
 
     function setList(){

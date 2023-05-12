@@ -8,15 +8,15 @@ function App(props) {
   const {quiz, getList} = React.useContext(MyContext)
   let styles = getList ? {
     display: 'block'
-} : {
-  display: 'none'
-}
+  } : {
+    display: 'none'
+  }
 
-let startStyles = getList ? {
-  display: 'none'
-} : {
-display: 'block'
-}
+  let startStyles = getList ? {
+    display: 'none'
+  } : {
+  display: 'block'
+  }
 
   
   return (
